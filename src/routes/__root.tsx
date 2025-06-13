@@ -79,7 +79,7 @@ function RootComponent() {
 					<ul className="hidden md:flex gap-6 text-lg font-bold text-secondary-700">
 						<Link to="/" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}} >Home</Link>
 						<Link to="/about" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>About</Link>
-						<Link to="/gallery" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>Gallery</Link>
+						{/* <Link to="/gallery" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>Gallery</Link> */}
 					</ul>
 				</nav>
 				{/* Mobile menu, shown when isMenuOpen is true */}
@@ -92,9 +92,9 @@ function RootComponent() {
 							<Link to="/about" onClick={() => setIsMenuOpen(false)}>
 								About
 							</Link>
-							<Link to="/gallery" onClick={() => setIsMenuOpen(false)}>
+							{/* <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>
 								Gallery
-							</Link>
+							</Link> */}
 						</ul>
 					</div>
 				)} 
