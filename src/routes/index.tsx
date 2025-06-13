@@ -46,7 +46,7 @@ function IndexComponent() {
 					</div>
 				</div>
 			</header>
-			<div className="grid grid-cols-2 mx-auto container mt-40 gap-10 mb-30">
+			<div className="grid md:grid-cols-2 grid-cols-1 mx-auto container px-4 py-24 gap-40">
       <div className='self-center'>
         <h2 className='font-heading text-6xl text-center mb-10'>
                     About Us
@@ -64,7 +64,7 @@ function IndexComponent() {
             Every line, curve, and word is drawn by hand—with stories of encouragement, faith, creativity, and craftsmanship flowing through each design.
           </p>
         </div>
-        <Link to="/about" className="self-center px-6 py-2 w-[30%] bg-secondary-400 mt-8 rounded-md flex items-center gap-2 justify-center"type="button">
+        <Link to="/about" className="self-center px-6 py-2 bg-secondary-400 mt-8 rounded-md flex items-center gap-2 justify-center"type="button">
           Learn More
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -73,7 +73,7 @@ function IndexComponent() {
       </div>
       <img src="/images/main-working-with-a-sroll-saw.png" className="h-[90%] w-full"alt='a man using a scroll saw' />
     </div>
-		<section className="container mx-auto mt-40 mb-30">
+		<section className="mx-auto container px-4 py-24 gap-40">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Vision Card */}
           <div className="group p-16 rounded-lg transition-all duration-300 hover:bg-primary-500 hover:border-0 border-2 border-primary-200">
@@ -120,7 +120,7 @@ function IndexComponent() {
       </section>
       <section className="container px-4 py-24 mx-auto">
         <h2 className="text-6xl font-heading text-center mb-20">Who do we serve</h2>      
-        <ul className="grid grid-cols-3 list-disc">
+        <ul className="grid grid-cols-2 md:grid-cols-3 px-10 md-px-0 gap-x-10 list-disc">
           <li className="mb-4">Scroll Saw Artists</li>
           <li className="mb-4">CNC and Laser Cut Operators</li>
           <li className="mb-4">DIY Hobbyists</li>
@@ -137,7 +137,7 @@ function IndexComponent() {
       
       <section className="container px-4 py-24 mx-auto" >
         <h2 className="text-6xl text-center font-heading mb-8">Craft with Faith. Create with Love.</h2>
-        <div className="grid grid-cols-2 items-center py-10">
+        <div className="grid md:grid-cols-2 gap-10 items-center  py-10">
           <p className="text-lg self-center">Get free scroll saw patterns, global crafting inspiration, and helpful tutorials sent to your inbox once in  a month. Join crafters from Nigeria, the USA, Canada, UK, and Australia</p>
           <form>
             <div className="flex flex-col mb-8">
