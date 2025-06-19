@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
 
 @layer {
@@ -32,4 +33,6 @@
   --color-secondary-700: #1d4ed8;
   --color-secondary-800: #1e40af;
   --color-secondary-900: #1e3a8a;
+  
+  --font-heading: "Bebas Neue", sans-serif;
 }

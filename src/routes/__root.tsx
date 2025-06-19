@@ -79,12 +79,13 @@ function RootComponent() {
 					<ul className="hidden md:flex gap-6 text-lg font-bold text-secondary-700">
 						<Link to="/" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}} >Home</Link>
 						<Link to="/about" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>About</Link>
-						{/* <Link to="/gallery" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>Gallery</Link> */}
+						<Link to="/gallery" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>Gallery</Link>
+						<Link to="/contact-us" activeOptions={{exact: true}} activeProps={{className: "underline decoration-secondary-700 decoration-3"}}>Contact us</Link>
 					</ul>
 				</nav>
 				{/* Mobile menu, shown when isMenuOpen is true */}
 				{isMenuOpen && (
-					<div className="md:hidden">
+					<div className="">
 						<ul className="flex flex-col items-center gap-4 text-lg font-bold bg-primary-400 p-4">
 							<Link to="/" onClick={() => setIsMenuOpen(false)}>
 								Home
@@ -92,15 +93,18 @@ function RootComponent() {
 							<Link to="/about" onClick={() => setIsMenuOpen(false)}>
 								About
 							</Link>
-							{/* <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>
+							<Link to="/gallery" onClick={() => setIsMenuOpen(false)}>
 								Gallery
-							</Link> */}
+							</Link>
+							<Link to="/contact-us" onClick={() => setIsMenuOpen(false)}>
+								Contact Us
+							</Link>
 						</ul>
 					</div>
 				)} 
         <Outlet /> {/* Start rendering router matches */}
         <footer className="px-4 py-6 bg-secondary-500 flex justify-between">
-                <p>© 2024, made with <span className="text-red-600">❤</span></p>
+                <p>© 2025, made with <span className="text-red-600">❤</span></p>
                 <div className="flex gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
                     <path 
